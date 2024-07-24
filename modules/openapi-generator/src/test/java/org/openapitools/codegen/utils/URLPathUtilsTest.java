@@ -80,6 +80,18 @@ public class URLPathUtilsTest {
     }
 
     @Test
+    public void testRelativeUrl() {
+        Assert.assertTrue(URLPathUtils.isRelativeUrl(Arrays.asList(new Server().url("/abc"))));
+        Assert.assertTrue(URLPathUtils.isRelativeUrl(Arrays.asList(new Server().url("/123"))));
+        Assert.assertTrue(URLPathUtils.isRelativeUrl(Arrays.asList(new Server().url("/abc/def"))));
+
+        Assert.assertFalse(URLPathUtils.isRelativeUrl(Arrays.asList(new Server().url("http://localhost:8080"))));
+        Assert.assertFalse(URLPathUtils.isRelativeUrl(Arrays.asList(new Server().url("http://localhost:8080/"))));
+        Assert.assertFalse(URLPathUtils.isRelativeUrl(Arrays.asList(new Server().url("http://localhost:8080/v1"))));
+        Assert.assertFalse(URLPathUtils.isRelativeUrl(Arrays.asList(new Server().url("https://abcdef.xyz:9999/some/path"))));
+    }
+
+    @Test
     public void testGetServerURLWithVariables() {
         Server s1 = new Server().url("http://localhost:{port}/").variables(new ServerVariables().addServerVariable("port", new ServerVariable()._default("8080").description("the server port")));
         Assert.assertEquals(URLPathUtils.getServerURL(s1, null).toString(), "http://localhost:8080/");
