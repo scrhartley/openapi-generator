@@ -84,6 +84,7 @@ public class URLPathUtilsTest {
         Assert.assertTrue(URLPathUtils.isRelativeUrl(Arrays.asList(new Server().url("/abc"))));
         Assert.assertTrue(URLPathUtils.isRelativeUrl(Arrays.asList(new Server().url("/123"))));
         Assert.assertTrue(URLPathUtils.isRelativeUrl(Arrays.asList(new Server().url("/abc/def"))));
+        Assert.assertTrue(URLPathUtils.isRelativeUrl(Arrays.asList(new Server().url("/"))));
 
         Assert.assertFalse(URLPathUtils.isRelativeUrl(Arrays.asList(new Server().url("http://localhost:8080"))));
         Assert.assertFalse(URLPathUtils.isRelativeUrl(Arrays.asList(new Server().url("http://localhost:8080/"))));
