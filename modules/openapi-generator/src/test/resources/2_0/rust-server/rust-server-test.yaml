@@ -5,6 +5,7 @@ info:
   title: rust-server-test
 schemes:
   - http
+host: 'localhost'
 paths:
   /dummy:
     get:

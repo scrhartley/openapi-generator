@@ -4,7 +4,7 @@ info:
   title: rust-server-test
   version: 2.3.4
 servers:
-- url: /
+- url: http://localhost/
 paths:
   /dummy:
     get:

@@ -4,7 +4,7 @@ info:
   title: My title
   version: 1.0.7
 servers:
-- url: /
+- url: http://localhost
 paths:
   /xml:
     post:

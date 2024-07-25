@@ -3,7 +3,7 @@ info:
   title: fruity
   version: 0.0.1
 servers:
-- url: /
+- url: http://localhost
 paths:
   /:
     get:

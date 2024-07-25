@@ -4,7 +4,7 @@ info:
   title: 'Minimal Example '
   version: v1
 servers:
-- url: /
+- url: http://localhost
 paths:
   /nullable-array-test:
     get:

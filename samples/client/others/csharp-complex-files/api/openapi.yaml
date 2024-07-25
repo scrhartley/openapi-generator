@@ -3,7 +3,7 @@ info:
   title: MultipartFile test
   version: 1.0.0
 servers:
-- url: /
+- url: ""
 paths:
   /multipart-array:
     post:

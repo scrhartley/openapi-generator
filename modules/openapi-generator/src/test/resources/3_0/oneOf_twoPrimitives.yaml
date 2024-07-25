@@ -3,6 +3,8 @@ info:
   title: oneOf two primitives
   description: oneOf with two entries of type string, see https://github.com/OpenAPITools/openapi-generator/issues/10450
   version: 1.0.0
+servers:
+  - url: ''
 paths:
   /myExample:
     post:

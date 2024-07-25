@@ -3,6 +3,8 @@ info:
   title: 'Minimal Example '
   description: byte Array error in equal method
   version: v1
+servers:
+  - url: 'http://localhost'
 paths:
   /nullable-array-test:
     get:
