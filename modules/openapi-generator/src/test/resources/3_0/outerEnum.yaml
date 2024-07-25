@@ -3,6 +3,8 @@ info:
   title: Petstore API
   description: API for managing pets in a pet store
   version: 1.0.0
+servers:
+  - url: 'http://localhost'
 paths:
   /dogs:
     get:

@@ -3,6 +3,8 @@ info:
   title: EmptyObject
   description: Ensure rust supports empty objects using serde::Value
   version: 1.0.0
+servers:
+  - url: 'http://localhost'
 paths:
   /endpoint:
     get:

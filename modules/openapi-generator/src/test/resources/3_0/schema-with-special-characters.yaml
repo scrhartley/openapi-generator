@@ -3,6 +3,8 @@ info:
   description: test
   version: 1.0.0
   title: test
+servers:
+  - url: ''
 paths:
   /test:
     post:

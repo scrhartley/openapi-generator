@@ -3,7 +3,7 @@ info:
   title: Regression test for an API which doesn't have any example
   version: 0.0.1
 servers:
-- url: /
+- url: http://localhost
 paths:
   /op:
     get:

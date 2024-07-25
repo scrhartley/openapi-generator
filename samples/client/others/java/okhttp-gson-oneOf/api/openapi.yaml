@@ -4,7 +4,7 @@ info:
   title: oneOf two primitives
   version: 1.0.0
 servers:
-- url: /
+- url: ""
 paths:
   /myExample:
     post:

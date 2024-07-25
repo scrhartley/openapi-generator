@@ -7,7 +7,7 @@ info:
   title: Dummy
   version: 1.0.0
 servers:
-- url: /
+- url: ""
 paths:
   /fake/parameter-name-mapping:
     get:

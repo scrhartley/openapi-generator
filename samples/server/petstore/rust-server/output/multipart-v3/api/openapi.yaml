@@ -4,7 +4,7 @@ info:
   title: Multipart OpenAPI V3 Rust Server Test
   version: 1.0.7
 servers:
-- url: /
+- url: http://localhost
 paths:
   /multipart_request:
     post:

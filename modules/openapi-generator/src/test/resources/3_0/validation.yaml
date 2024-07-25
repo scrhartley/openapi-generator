@@ -2,6 +2,8 @@ openapi: 3.0.1
 info:
    title: fruity
    version: 0.0.1
+servers:
+   - url: 'http://localhost'
 paths:
    /:
       get:
